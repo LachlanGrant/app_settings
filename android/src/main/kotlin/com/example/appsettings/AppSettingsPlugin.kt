@@ -41,7 +41,7 @@ class AppSettingsPlugin() : MethodCallHandler, FlutterPlugin, ActivityAware {
 
     /// Main constructor to setup the Registrar
     constructor(registrar: Registrar) : this() {
-        this.activity = registrar.activity()
+        this.activity = registrar.activity()!!
     }
 
     companion object {
